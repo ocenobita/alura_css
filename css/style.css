@@ -1,0 +1,99 @@
+/*definição do plano de fundo, posição e fontes*/
+body{
+    font-family: Arial;
+    background-image: url(https://cutewallpaper.org/21/matrix-gif-background/Animated-Gif-Background-Html-Code-Matrix-Gif-Free-.gif);
+    background-size: auto 100vh;
+    height: 100vh;
+  }
+  
+  .menu{
+    background-color: #264727;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  a{
+    color: teal;
+  }
+  
+  .site-title{
+    color: gold;
+    text-align: center;
+      opacity: 0.6;
+        text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+  
+  .site-subtitle{
+    color: red;
+    text-align: center;
+    font-style: italic;
+        text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 1.8s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+  
+  table {
+    border: 3px solid #87ab88;
+    padding: 1px;
+    box-shadow: 5px 5px 10px 2px #042105;
+  }
+  
+  th {
+    text-align: left;
+    color: #87ab88;
+    background-color: #264727;
+  }
+  
+  /*Webkit que dá a função de piscar*/
+  @-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  }
+  
+  /*velocidade de piscada do primeiro ponto*/
+  .blink1{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 1.8s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+  
+  /*velocidade de piscada do segundo ponto*/
+  .blink2{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 1.2s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+  
+  /*velocidade de piscada do terceiro ponto*/
+  .blink3{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+  
+  
+  
