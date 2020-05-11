@@ -8,6 +8,8 @@ body{
   
   .menu{
     background-color: #264727;
+    opacity: 0.9;
+    box-shadow: 5px 5px 10px 2px #042105;
   }
   
   .menu ul{
@@ -17,6 +19,8 @@ body{
   
   .menu li{
     list-style: none;
+    font-size: 30px;
+    font-family: Impact;
   }
   
   a{
@@ -25,6 +29,7 @@ body{
   
   .site-title{
     color: gold;
+    font-size: 50px;
     text-align: center;
       opacity: 0.6;
         text-decoration: blink;
