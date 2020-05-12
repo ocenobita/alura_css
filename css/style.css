@@ -1,104 +1,112 @@
-/*definição do plano de fundo, posição e fontes*/
+/*RESET  do CSS, "software reset", definição tudo padrao, faz com que o navegador nao use instruções padroes na tela*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Ensinando a font do Matrix ao CSS*/
+@font-face {
+  font-family: 'miltownregular';
+  src: url('webfontkit/miltown_-webfont.woff2') format('woff2'),
+       url('webfontkit/miltown_-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*definição na página toda de fonts padrões, imagem de plano de fundo, posição da imagem*/
 body{
-    font-family: Arial;
-    background-image: url(https://cutewallpaper.org/21/matrix-gif-background/Animated-Gif-Background-Html-Code-Matrix-Gif-Free-.gif);
-    background-size: auto 100vh;
-    height: 100vh;
+  font-family: "miltownregular";
+  background-image: url(https://cutewallpaper.org/21/matrix-gif-background/Animated-Gif-Background-Html-Code-Matrix-Gif-Free-.gif);
+  background-size: auto 100vh;
+  height: 100vh;
+}
+
+/*Definição  de estilos por  tamanhos mínimos de 300px*/
+@media (min-width: 320px) {
+.site-title{
+  color: white;
+}
+}
+/*Definição  de estilos por  tamanhos mínimos de 400px*/
+@media (min-width: 375px) {
+.site-title{
+    color: tomato;
   }
-  
-  .menu{
-    background-color: #264727;
-    opacity: 0.9;
-    box-shadow: 5px 5px 10px 2px #042105;
   }
-  
-  .menu ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu li{
-    list-style: none;
-    font-size: 30px;
-    font-family: Impact;
-  }
-  
-  a{
-    color: teal;
-  }
-  
+  /*Definição  de estilos por  tamanhos mínimos de 500px*/
+@media (min-width: 414px) {
   .site-title{
-    color: gold;
-    font-size: 50px;
-    text-align: center;
-      opacity: 0.6;
-        text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 10s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
+    color: #003B00;
   }
-  
-  .site-subtitle{
-    color: red;
-    text-align: center;
-    font-style: italic;
-        text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 1.8s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
   }
-  
-  table {
-    border: 3px solid #87ab88;
-    padding: 1px;
-    box-shadow: 5px 5px 10px 2px #042105;
+  /*Definição  de estilos por  tamanhos mínimos de 600px*/
+@media (min-width: 1024px) {
+  .site-title{
+    color: #00FF41;
   }
-  
-  th {
-    text-align: left;
-    color: #87ab88;
-    background-color: #264727;
   }
+
+header{
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*definição do menu superior, cor de fundo, opacidade, sombra gerada e bordas arredondadas*/
+.menu{
+  background-color: #003B00;
+  opacity: 0.9;
+  box-shadow: 5px 5px 10px 2px #042105;
+  border-radius: 500px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
+/*definição do conteudo do menu superior, posicionamento de texto dentro da lista*/
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*definição do conteudo do menu superior, retirada dos bullets. de lista, tamanho da fonte e fonte.*/
+.menu li{
+  list-style: none;
+  font-size: 30px;
+  font-family: Impact;
+}
+
+/*definição do conteudo do menu superior, cor do. texto*/
+a{
+  font-family: "miltownregular";
+  color: #008F11;
+}
+
+/*definição do header 1, cor do texto, tamanho, alinhamento, opacidade, efeito de piscar e sua duração, e blur em relação ao conteúdo atras.*/
+.site-title{
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(8px);
+}
   
-  /*Webkit que dá a função de piscar*/
-  @-webkit-keyframes blinker {
-    from {opacity: 1.0;}
-    to {opacity: 0.0;}
-  }
-  
-  /*velocidade de piscada do primeiro ponto*/
-  .blink1{
-      text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 1.8s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
-  }
-  
-  /*velocidade de piscada do segundo ponto*/
-  .blink2{
-      text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 1.2s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
-  }
-  
-  /*velocidade de piscada do terceiro ponto*/
-  .blink3{
-      text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 0.6s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
-  }
-  
-  
-  
+/*definição do header 2, cor do texto, tamanho, alinhamento, opacidade, efeito de piscar e sua duração, e blur em relação ao conteúdo atras.*/
+.site-subtitle{
+  color: #00FF41;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(8px);
+}
+
+figure{
+  size: 0;
+}
