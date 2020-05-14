@@ -28,9 +28,6 @@ body{
 .site-title{
   color: white;
 }
-.portfolio .grid{
-grid-template-columns: 280px;
-}
 }
 
 /*Definição  de estilos por  tamanhos mínimos de 375px*/
@@ -38,9 +35,6 @@ grid-template-columns: 280px;
 .site-title{
     color: tomato;
   }
-  .portfolio .grid{
-    grid-template-columns: 280px 280px;
-    }
   }
 
   /*Definição  de estilos por  tamanhos mínimos de 414px*/
@@ -48,9 +42,6 @@ grid-template-columns: 280px;
   .site-title{
     color: #003B00;
   }
-  .portfolio .grid{
-    grid-template-columns: 280px 280px 280px;
-    }
   }
   
   /*Definição  de estilos por  tamanhos mínimos de 1024px*/
@@ -58,9 +49,6 @@ grid-template-columns: 280px;
   .site-title{
     color: #00FF41;
   }
-  .portfolio .grid{
-    grid-template-columns: repeat(4, 280px);
-    }
   }
 
 
@@ -142,6 +130,7 @@ header{
 }
 .site-subtitle:hover{
   transition: all .4s;
+  transition: all .4s;
   color: rgb(196, 226, 136);
 }
 
@@ -149,33 +138,20 @@ header{
 .site-portfolio{
   color: whitesmoke;
   padding: 1em;
-  
 }
 
 .img-portfolio {
   height: 180px;
   width: 240px;
   object-fit: cover;
-
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 2px #042105;
 }
-
-.img-portfolio:hover {
-  transition: all .4s;
-  box-shadow: 20px 20px 20px 4px #003B00;
-}
-
 
 .portfolio .grid {
   display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 80vh;
+  grid-template-columns: 250px 500px;
+  background-color: salmon;
 }
 
-.portfolio figure{
+.portfolio figure {
   text-align: center;
-  color: whitesmoke;
-  
 }
